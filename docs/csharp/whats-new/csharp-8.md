@@ -1,4 +1,4 @@
----
+ComputeSalesTax---
 title: What's new in C# 8.0 - C# Guide
 description: Get an overview of the new features available in C# 8.0.
 ms.date: 04/07/2020
@@ -177,7 +177,7 @@ public static decimal ComputeSalesTax(Address location, decimal salePrice) =>
     location switch
     {
         { State: "WA" } => salePrice * 0.06M,
-        { State: "MN" } => salePrice * 0.75M,
+        { State: "MN" } => salePrice * 0.075M,
         { State: "MI" } => salePrice * 0.05M,
         // other cases removed for brevity...
         _ => 0M
